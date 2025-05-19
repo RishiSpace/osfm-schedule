@@ -16,6 +16,7 @@ private:
     void listenForClients();
     void handleClientRegistration();
     void dispatchTasks();
+    void readTasksFromStdin();
 
     int port_;
     std::map<std::string, ClientInfo> clients_; // key: client ID
