@@ -37,3 +37,8 @@ void Server::dispatchTasks() {
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
 }
+
+int main() {
+    // your server startup code
+    return 0;
+}

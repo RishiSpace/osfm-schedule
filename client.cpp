@@ -38,3 +38,11 @@ void Client::executeTask(const Task& t) {
     system(cmd.c_str());
     // write done file
 }
+
+int main() {
+    std::string serverAddr = "127.0.0.1"; // or your server's IP
+    int regPort = 9000;                   // or your server's registration port
+    Client client(serverAddr, regPort);
+    client.run();
+    return 0;
+}

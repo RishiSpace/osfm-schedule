@@ -4,6 +4,7 @@
 #include <string>
 #include <netinet/in.h> // Add this for sockaddr_in
 #include "task.h"
+#include "client_info.h" // <-- Add this line
 
 struct UDPListener {
     int sockfd; // <-- Add this
